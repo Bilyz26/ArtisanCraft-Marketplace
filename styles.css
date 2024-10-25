@@ -595,9 +595,12 @@ max-width: 100%;
     display: none;
 }
 .filter{
+    padding-top: 40px;
+    width: 90%;
+    margin: auto;
     height: 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -632,7 +635,9 @@ max-width: 100%;
 
 
 .op{
+
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin: 50px auto;
     gap: 100px;
@@ -745,6 +750,8 @@ width: 50px;
  
  .all-reviews{
     display: grid;
+    width: 90%;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 48px;
     padding: 24px;
@@ -1026,23 +1033,4 @@ form button{
     background-color:rgb(204, 169, 120);
     text-align: center;
   
-}
-
-@media (max-width: 930px){
-    .contact{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .contact__right{
-        display: none;
-    }
-    .contact_left{
-        grid-column:1 ;
-  
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content: center;
-        gap: 50px;
-    }
 }
