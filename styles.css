@@ -410,17 +410,34 @@ footer p {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(5,1fr);
 
 }
 
 .image_section{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     grid-column: 1/4;
-    grid-row: 1;
+    grid-row: 1/5;
 
+}
+.sub_img{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100px;
+    width: 50%;
+    margin-right: 70px;
+    
+
+}
+.sub_img img{
+    height: 90px;
+    width: 90px;
 }
 .details_section{
     width: 90%;
@@ -1014,9 +1031,15 @@ form input{
     height: 30px;
 
 }
-/* input::placeholder {
+input::placeholder {
     text-align:start;
-} */
+    font-size: 15px;
+}
+
+textarea::placeholder{
+    text-align:start;
+    font-size: 15px;
+}
 
 form button{
     width: 250px;
@@ -1036,6 +1059,7 @@ form button{
 }
 
 
+
 @media (max-width: 930px){
     .contact{
         display: grid;
@@ -1053,4 +1077,39 @@ form button{
         justify-content: center;
         gap: 50px;
     }
+
+    .product_details{
+        height: 180vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+
+    }
+    .image_section{
+        height: 40vh;
+        width: 80vw;
+        margin: auto;
+        grid-column: 1;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: auto;
+    }
+    .details_section{
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+    .sub_img{
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+        width: 80vw ;
+        margin-right: 40px;
+    }
+    .product_image{
+        height: 60vh;
+        width: 60vw;
+    }
 }
+
