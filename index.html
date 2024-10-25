@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
@@ -15,13 +16,13 @@
                 <svg onclick="hidesidebar()" xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="pages/products.html">Categories</a></li>
+                <li><a href="pages/products.html">Products</a></li>
                 <li><a href="pages/about.html">About</a></li>
                 <li><a href="pages/contact.html">Contact us</a></li>
             </ul>
             <ul class="headerb">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="pages/products.html">Categories</a></li>
+                <li><a href="pages/products.html">Products</a></li>
                 <li><a href="pages/about.html">About</a></li>
                 <li><a href="pages/contact.html">Contact us</a></li>
             </ul>
@@ -40,12 +41,12 @@
             <img class="img" src="assets/main_img.svg" alt="">
 
         </section>
-        <div class="home_content">
+        <div class="home_content" >
             <p>We celebrate our ancestors traditions through soulfully sourced artisanal homeware handpicked from villages and <br> cooperatives across our North-African homeland of Morocco. We share our treasured finds with you to connect <br> Moroccan artisans and their ancient crafts with modern market access so they can continue doing what they love, <br> and preserve the artistry of traditional handmade products for future generations.</p>
         </div>
         <h1 class="cat_head">OUR CATEGORIES</h1>
-        <section class="categories">
-            <div class="cart cat1">
+        <section class="categories" data-aos="fade-up" data-aos-duration="1500">
+            <div class="cart cat1" >
                 <img class="catimg" src="assets/cat1.jpg" alt="">
                 <h2>HOMEWARE</h2>
             </div>
@@ -64,11 +65,11 @@
         </section>
         <div class="mainv2">
             <section class="main2">
-            <div class="left_section">
+            <div class="left_section" data-aos="fade-right" data-aos-duration="1500">
                 <h4>Handcrafted with love</h4>
                 <p style="text-align: center;">For every natural material there is a Moroccan tradition of working it by hand to enrich it with fine craftsmanship. Moroccan artisans pour their hearts and souls into their work, often in family-run workshops where craft knowledge and traditional motifs are passed from generation to generation. Moroccan craftsmanship brings out the best of the artisans’ skills together with the qualities of raw materials such as wool, leather, clay, and brass. This use of simple materials also means their products will last and age gracefully. </p>
             </div>
-            <div class="right_section">
+            <div class="right_section" data-aos="fade-left" data-aos-duration="1500">
                 <img src="assets/men.svg" alt="">
             </div>
         </section>
@@ -80,7 +81,7 @@
                 <p style="text-align: center;">Sign up to receive our emails and be the first to know about our new <br> products and exclusive offers. We promise we won't spam you!</p>
                 <div class="formbtn">
                     <input type="text" placeholder="Enter your email" class="form__input"  />
-                    <button class="btn"  ><a href="pages/product_details.html">SUBSCRIBE</a></button>
+                    <button class="btn">SUBSCRIBE</button>
                 </div>
             </div>
             <div class="footer_bottom">
@@ -91,5 +92,10 @@
     
 </body>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 
 </html>

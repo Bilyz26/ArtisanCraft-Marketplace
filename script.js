@@ -10,20 +10,7 @@ function hidesidebar(){
 
     sidebar.style.display='none';
 }
-//hover img change
-document.querySelectorAll('.best-selling-product').forEach(product => {
-    const img = product.querySelector('.product-image');
-    const originalSrc = img.src; 
-    const hoverSrc = '../assets/cat4.jpg'; 
 
-    product.addEventListener('mouseenter', () => {
-        img.src = hoverSrc; 
-    });
-
-    product.addEventListener('mouseleave', () => {
-        img.src = originalSrc; 
-    });
-});
 
 document.getElementById('category-filter').addEventListener('change', filterProducts);
 
